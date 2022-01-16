@@ -1,0 +1,191 @@
+/**
+ * @name Clear-Dark-vision-customization
+ * @author 0lKk@e$1
+ * @version 6.1.2.5
+ * @description Highly customizable and beautiful theme for BetterDiscord, made by me
+ * @source https://github.com/ClearVision/ClearVision-v6
+ * @website https://clearvision.gitlab.io
+ * @invite dHaSxn3
+*/
+@import url("https://nyri4.github.io/Comfy/betterdiscord/main.css");
+@import url('https://clearvision.gitlab.io/v6/main.css');
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
+:root {
+  --main-color: #C5370A;--hover-color: #B3541E;--success-color: #197249;--danger-color: #982929;--url-color: #3F51B5;
+  --background-image: url('https://imgur.com/aK0X5pc.gif');
+  --background-shading: 51%;
+  --background-position: center;--background-size: cover;
+  --background-repeat: repeat;
+  --background-attachment: fixed;
+  --background-brightness: 169%;
+  --background-contrast: 100%;
+  --background-saturation: 100%;
+  --background-grayscale: 0%;
+  --background-invert: 0%;
+  --background-blur: 4px;
+/* BlurpleRecolor */
+	--accentcolor: var(--accent);--vaccentcolor-hover: rgb(var(--accent));--vaccentcolor-active: rgb(var(--accent));
+  /*--user-popout-image: url('https://images.hdqwalls.com/download/dark-evening-snow-covered-mountains-5k-zo-2560x1440.jpg');*/
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-repeat: var(--background-repeat);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-brightness: var(--background-brightness)%;
+  --user-popout-contrast: var(--background-contrast)%;
+  --user-popout-saturation: var(--background-saturation)%;
+  --user-popout-grayscale: var(--background-grayscale)%;
+  --user-popout-invert: var(--background-invert)%;
+  --user-popout-blur: calc(var(--background-blur) + 3)px;
+  /*--user-modal-image: url('https://imgur.com/ym47CiX.gif');
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-repeat: var(--background-repeat);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-brightness: var(--background-brightness)%;
+  --user-modal-contrast: var(--background-contrast)%;
+  --user-modal-saturation: var(--background-saturation)%;
+  --user-modal-grayscale: var(--background-grayscale)%;
+  --user-modal-invert: var(--background-invert)%;
+  */--user-modal-blur: 8px;
+  --home-icon: url('https://media.tenor.com/images/7935f88f7daa423ae94f4c20d151924c/tenor.gif');
+  --home-position: center;
+  --home-size: 40px;
+  --mention-color: rgb(243, 215, 53);
+  --channel-unread: rgb(255, 255, 255);
+  --channel-color: rgba(138, 163, 50, 0.521);
+  --muted-color: rgba(255,255,255,0.1);
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #d62323;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+  --main-font: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  --channels-width: 220px;
+  /*--members-width: 240px;
+  --backdrop-overlay: rgba(0,0,0,0.8);
+  --backdrop-image: var(--background-image);
+  --backdrop-position: var(--background-position);
+  --backdrop-size: var(--background-size);
+  --backdrop-repeat: var(--background-repeat);
+  --backdrop-attachment: var(--background-attachment);
+  --backdrop-sepia: var(--background-sepia);
+  --backdrop-blur: var(--background-blur);
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);*/
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 2px;
+  --rs-large-spacing: 2px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 2px;
+  --rs-large-width: 2px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #43b581;
+  --rs-idle-color: #faa61a;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #643da7;
+  --rs-phone-visible: block;
+}
+/* Settings */
+div[aria-label*="_SETTINGS"],
+div[aria-label*="_DEBUG"] {
+	--background-primary: transparent;--background-secondary: rgba(0,0,0,1);
+}
+div[class^="sidebarRegionScroller-"]>nav {
+	--background-secondary: transparent;
+}
+/*div[class^="contentRegion-"] {
+	--background-primary: rgba(0,0,0,1);
+}
+div[class^="contentRegion-"] div[style^="overflow: hidden scroll"] {
+	background-color: transparent;
+	--background-primary: rgba(var(--black), 0.1);--background-secondary: rgba(var(--black), 0.2);
+	--background-secondary-alt: rgba(var(--black), 0.25);--background-tertiary: rgba(var(--white), 0.1);
+}*/
+div[aria-label*="_SETTINGS"] aside>div {
+	--background-primary: transparent;
+}
+div[aria-label*="_SETTINGS"] aside>div::-webkit-scrollbar-track {
+	visibility: hidden !important;
+}
+.bd-addon-list {
+	--background-secondary: var(--background-solid);--background-secondary-alt: var(--background-solid-dark);
+}
+/* Panels */
+div[class^='sidebar-']>section {
+	--background-primary: rgba(var(--white), 0.07);--background-secondary: rgba(var(--white), 0.1);--background-secondary-alt: rgba(var(--black), 0.95);
+	margin-bottom: 70px;
+}
+div[class^='sidebar-']>section>div:last-child {
+	background-color: var(--background-secondary-alt);
+	box-sizing: border-box;
+	height: 70px;
+	padding: 0 18px;
+	width: calc(100% + 72px);
+	position: absolute;
+	left: -72px;
+	bottom: 0;
+}
+/* Sidebar Header */
+div[class*='clickable-'][aria-expanded]>header {
+	height: 54px;
+	--background-accent: rgba(var(--accent), 1);--background-modifier-hover: rgba(var(--black), 0.25);
+}
+/* Sidebar */
+.platform-win [class^="sidebar-"] {
+	border-radius: 0;
+}
+div[class^="sidebar-"] nav,
+#private-channels {
+	background-color: transparent;
+	--background-tertiary: rgba(var(--black), 0.35);
+}
+div[class^="sidebar-"]>nav>div[class^="searchBar"] {
+	height: 54px;
+}
+div[id^="members-"] {
+	--background-secondary: rgba(var(--black), 0.4);--background-modifier-hover: rgba(var(--white), 0.07);--background-modifier-active: var(--background-modifier-hover);--background-modifier-selected: rgba(var(--white), 0.07);
+}
+div[id^="members-"]>div {
+	background-color: transparent;
+}
+div[id^="members-"] [class*="placeholder"] {
+	--backgorund-primary: var(--text-normal);
+}
+div[class^='nowPlayingColumn'] {
+	--background-secondary: transparent;--background-primary: rgba(var(--black), 0.5);--background-modifier-hover: rgba(var(--white), 0.075);
+}
+#channels div[class^="unread-"] {
+	--interactive-active: rgba(var(--accent), 1);
+}
+/* Outer containers */
+#app-mount {
+	--background-tertiary: transparent;--background-secondary: transparent;
+	background: var(--background-image) center/cover no-repeat;
+}
+#app-mount>div[class^="app-"] {
+	--background-tertiary: transparent;--background-secondary: rgba(var(--black), 0.7);
+	background-color: rgba(var(--black), 0.4);
+}
+nav+div [class^='sidebar-'],
+nav+div[class^='base-'] {
+	overflow: visible !important;
+	position: relative;
+	max-width: calc(100% - 72px);
+}
+nav+div[class^='base-'] > div[class^="notice"] {
+	border-radius: 0;
+}
+div[class^='base-']>div {
+	--background-secondary: rgba(var(--black), 0.7);--background-tertiary: rgba(var(--white), 0.05);--background-primary: rgba(var(--black), 0.8);
+}
+#app-mount>div:not([class^="app-"]),
+.autocomplete-1vrmpx {
+  --background-primary: var(--background-solid);--background-secondary: var(--background-solid-dark);--background-secondary-alt: var(--background-solid-darker);--background-tertiary: var(--background-solid-darker);
+}
+
+
+
